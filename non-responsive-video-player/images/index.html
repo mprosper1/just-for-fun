@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Cinema</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <nav>
+          <div class="section-nav">
+            <div class="icon-01">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="12"
+                viewBox="0 0 384 512"
+                class="icon-1"
+              >
+                <path
+                  d="M73 39c-14.8-9.1-33.4-9.4-48.5-.9S0 62.6 0 80V432c0 17.4 9.4 33.4 24.5 41.9s33.7 8.1 48.5-.9L361 297c14.3-8.7 23-24.2 23-41s-8.7-32.2-23-41L73 39z"
+                />
+              </svg>
+            </div>
+            <form id="search_form" action="">
+              <input type="search" placeholder="cute cat" />
+              <img src="images/search.svg" alt="search icon" />
+              <button class="search-btn">Search</button>
+            </form>
+            <div class="search-bar"></div>
+            <div class="tiny-container">
+              <div class="icon-02">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="18"
+                  viewBox="0 0 576 512"
+                  class="icon-2"
+                >
+                  <path
+                    d="M0 128C0 92.7 28.7 64 64 64H320c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128zM559.1 99.8c10.4 5.6 16.9 16.4 16.9 28.2V384c0 11.8-6.5 22.6-16.9 28.2s-23 5-32.9-1.6l-96-64L416 337.1V320 192 174.9l14.2-9.5 96-64c9.8-6.5 22.4-7.2 32.9-1.6z"
+                  />
+                </svg>
+              </div>
+              <div class="icon-03">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="14"
+                  viewBox="0 0 448 512"
+                  class="icon-3"
+                >
+                  <path
+                    d="M224 0c-17.7 0-32 14.3-32 32V51.2C119 66 64 130.6 64 208v18.8c0 47-17.3 92.4-48.5 127.6l-7.4 8.3c-8.4 9.4-10.4 22.9-5.3 34.4S19.4 416 32 416H416c12.6 0 24-7.4 29.2-18.9s3.1-25-5.3-34.4l-7.4-8.3C401.3 319.2 384 273.9 384 226.8V208c0-77.4-55-142-128-156.8V32c0-17.7-14.3-32-32-32zm45.3 493.3c12-12 18.7-28.3 18.7-45.3H224 160c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7z"
+                  />
+                </svg>
+              </div>
+              <div class="tiny-img">
+                <img
+                  class="my-img"
+                  src="images/small-person-img.jpeg"
+                  alt="small person img"
+                />
+              </div>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container">
+        <div class="child_container-01">
+          <div class="side-nav">
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="18"
+                viewBox="0 0 576 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"
+                />
+              </svg>
+            </div>
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="14"
+                viewBox="0 0 448 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512H418.3c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304H178.3z"
+                />
+              </svg>
+            </div>
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                viewBox="0 0 512 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120V256c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2V120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                />
+              </svg>
+            </div>
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                viewBox="0 0 512 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M149.1 64.8L138.7 96H64C28.7 96 0 124.7 0 160V416c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V160c0-35.3-28.7-64-64-64H373.3L362.9 64.8C356.4 45.2 338.1 32 317.4 32H194.6c-20.7 0-39 13.2-45.5 32.8zM256 192a96 96 0 1 1 0 192 96 96 0 1 1 0-192z"
+                />
+              </svg>
+            </div>
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="12"
+                viewBox="0 0 384 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M0 64C0 28.7 28.7 0 64 0H224V128c0 17.7 14.3 32 32 32H384V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V64zm384 64H256V0L384 128z"
+                />
+              </svg>
+            </div>
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                viewBox="0 0 512 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"
+                />
+              </svg>
+            </div>
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                viewBox="0 0 512 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zm0-384c13.3 0 24 10.7 24 24V264c0 13.3-10.7 24-24 24s-24-10.7-24-24V152c0-13.3 10.7-24 24-24zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+                />
+              </svg>
+            </div>
+            <div class="side-nav-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                height="16"
+                width="16"
+                viewBox="0 0 512 512"
+                class="nav-icon"
+              >
+                <path
+                  d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM169.8 165.3c7.9-22.3 29.1-37.3 52.8-37.3h58.3c34.9 0 63.1 28.3 63.1 63.1c0 22.6-12.1 43.5-31.7 54.8L280 264.4c-.2 13-10.9 23.6-24 23.6c-13.3 0-24-10.7-24-24V250.5c0-8.6 4.6-16.5 12.1-20.8l44.3-25.4c4.7-2.7 7.6-7.7 7.6-13.1c0-8.4-6.8-15.1-15.1-15.1H222.6c-3.4 0-6.4 2.1-7.5 5.3l-.4 1.2c-4.4 12.5-18.2 19-30.6 14.6s-19-18.2-14.6-30.6l.4-1.2zM224 352a32 32 0 1 1 64 0 32 32 0 1 1 -64 0z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <div class="child_container-02">
+          <div class="first-part">
+            <div class="img-container">
+              <img
+                class="my-background-img"
+                src="images/background-img.jpeg"
+                alt="background img"
+              />
+            </div>
+
+            <div class="dime-light">
+              <div class="line-dash">
+                <div class="inner-line-dash"></div>
+              </div>
+              <div class="space_div">
+                <div class="container-nav">
+                  <div class="rewind">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="10"
+                      viewBox="0 0 320 512"
+                      class="icon"
+                    >
+                      <path
+                        d="M267.5 440.6c9.5 7.9 22.8 9.7 34.1 4.4s18.4-16.6 18.4-29V96c0-12.4-7.2-23.7-18.4-29s-24.5-3.6-34.1 4.4l-192 160L64 241V96c0-17.7-14.3-32-32-32S0 78.3 0 96V416c0 17.7 14.3 32 32 32s32-14.3 32-32V271l11.5 9.6 192 160z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="pause">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="10"
+                      viewBox="0 0 320 512"
+                      class="icon"
+                    >
+                      <path
+                        d="M48 64C21.5 64 0 85.5 0 112V400c0 26.5 21.5 48 48 48H80c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H48zm192 0c-26.5 0-48 21.5-48 48V400c0 26.5 21.5 48 48 48h32c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48H240z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="forward">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="10"
+                      viewBox="0 0 320 512"
+                      class="icon"
+                    >
+                      <path
+                        d="M52.5 440.6c-9.5 7.9-22.8 9.7-34.1 4.4S0 428.4 0 416V96C0 83.6 7.2 72.3 18.4 67s24.5-3.6 34.1 4.4l192 160L256 241V96c0-17.7 14.3-32 32-32s32 14.3 32 32V416c0 17.7-14.3 32-32 32s-32-14.3-32-32V271l-11.5 9.6-192 160z"
+                      />
+                    </svg>
+                  </div>
+                  <div class="volume">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="16"
+                      width="14"
+                      viewBox="0 0 448 512"
+                      class="icon"
+                    >
+                      <path
+                        d="M301.1 34.8C312.6 40 320 51.4 320 64V448c0 12.6-7.4 24-18.9 29.2s-25 3.1-34.4-5.3L131.8 352H64c-35.3 0-64-28.7-64-64V224c0-35.3 28.7-64 64-64h67.8L266.7 40.1c9.4-8.4 22.9-10.4 34.4-5.3zM412.6 181.5C434.1 199.1 448 225.9 448 256s-13.9 56.9-35.4 74.5c-10.3 8.4-25.4 6.8-33.8-3.5s-6.8-25.4 3.5-33.8C393.1 284.4 400 271 400 256s-6.9-28.4-17.7-37.3c-10.3-8.4-11.8-23.5-3.5-33.8s23.5-11.8 33.8-3.5z"
+                      />
+                    </svg>
+                  </div>
+                  <p class="timer">1:24 / 4:48</p>
+                </div>
+                <div class="view-size">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    width="16"
+                    viewBox="0 0 512 512"
+                    class="icon"
+                  >
+                    <path
+                      d="M200 32H56C42.7 32 32 42.7 32 56V200c0 9.7 5.8 18.5 14.8 22.2s19.3 1.7 26.2-5.2l40-40 79 79-79 79L73 295c-6.9-6.9-17.2-8.9-26.2-5.2S32 302.3 32 312V456c0 13.3 10.7 24 24 24H200c9.7 0 18.5-5.8 22.2-14.8s1.7-19.3-5.2-26.2l-40-40 79-79 79 79-40 40c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H456c13.3 0 24-10.7 24-24V312c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2l-40 40-79-79 79-79 40 40c6.9 6.9 17.2 8.9 26.2 5.2s14.8-12.5 14.8-22.2V56c0-13.3-10.7-24-24-24H312c-9.7 0-18.5 5.8-22.2 14.8s-1.7 19.3 5.2 26.2l40 40-79 79-79-79 40-40c6.9-6.9 8.9-17.2 5.2-26.2S209.7 32 200 32z"
+                    />
+                  </svg>
+                </div>
+                <div class="video_setting">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    height="16"
+                    width="16"
+                    viewBox="0 0 512 512"
+                    class="icon"
+                  >
+                    <path
+                      d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"
+                    />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="second-part">
+            <hi class="heading"
+              >RM - Wild Flower (with youjeen) Official Music Video</hi
+            >
+            <p class="text">
+              <span class="special-01"> 106M views</span>
+              <span class="special-02">7months ago</span>
+              <ion-icon name="thumbs-up-outline"></ion-icon>1.6m
+            </p>
+            <h2 class="hybe">Hybe</h2>
+            <div class="subscribe">
+              <p class="subscriber">70.1M subscriber</p>
+              <button class="subscribe-btn">Subscribe</button>
+            </div>
+            <div class="comment-zone">
+              <h2 class="comments">141,356 comments</h2>
+              <p class="top">Top comments</p>
+            </div>
+            <div class="comment-section">
+              <p class="here">write your comment here</p>
+              <span class="telegram">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="16"
+                  width="15.5"
+                  viewBox="0 0 496 512"
+                  class="telegram-icon"
+                >
+                  <!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                  <path
+                    d="M248 8C111 8 0 119 0 256S111 504 248 504 496 393 496 256 385 8 248 8zM363 176.7c-3.7 39.2-19.9 134.4-28.1 178.3-3.5 18.6-10.3 24.8-16.9 25.4-14.4 1.3-25.3-9.5-39.3-18.7-21.8-14.3-34.2-23.2-55.3-37.2-24.5-16.1-8.6-25 5.3-39.5 3.7-3.8 67.1-61.5 68.3-66.7 .2-.7 .3-3.1-1.2-4.4s-3.6-.8-5.1-.5q-3.3 .7-104.6 69.1-14.8 10.2-26.9 9.9c-8.9-.2-25.9-5-38.6-9.1-15.5-5-27.9-7.7-26.8-16.3q.8-6.7 18.5-13.7 108.4-47.2 144.6-62.3c68.9-28.6 83.2-33.6 92.5-33.8 2.1 0 6.6 .5 9.6 2.9a10.5 10.5 0 0 1 3.5 6.7A43.8 43.8 0 0 1 363 176.7z"
+                  />
+                </svg>
+              </span>
+            </div>
+            <hr />
+            <div class="small-circle">
+              <img
+                src="images/WhatsApp Image 2023-12-08 at 12.55.59 AM (2).jpeg"
+                alt="car-photo"
+              />
+              <h3 class="jenna">
+                JennaX <br />
+                <span class="extra">@Xjenna</span>
+              </h3>
+              <p class="xjenna">10 days ago</p>
+            </div>
+            <p class="last-part">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint
+              molestias tenetur doloribus at eius numquam iste quia eos soluta
+              labore neque in, consequuntur magnam consectetur quibusdam cumque
+              nobis incidunt assumenda.
+            </p>
+          </div>
+        </div>
+
+        <div class="child_container-03">
+          <h2 class="heading-02">Recommendations</h2>
+          <div class="scroller">
+            <div class="recommended-movies">
+              <img src="images/image-01.jpg" alt="horror-movies" />
+              <div class="text-part">
+                <h2 class="title">Cinema horror</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-02.jpg" alt="halloween" />
+              <div class="text-part">
+                <h2 class="title">halloween</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-03.jpg" alt="thrilla" />
+              <div class="text-part">
+                <h2 class="title">thrilla</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-04.jpg" alt="Lorem" />
+              <div class="text-part">
+                <h2 class="title">Lorem ipsum</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-05.jpeg" alt="pope of exorism" />
+              <div class="text-part">
+                <h2 class="title">pope of exorism</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-06.jpeg" alt="belzebuth" />
+              <div class="text-part">
+                <h2 class="title">belzebuth</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-07.jpeg" alt="mara" />
+              <div class="text-part">
+                <h2 class="title">Mara</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-08.jpeg" alt="behind the trees" />
+              <div class="text-part">
+                <h2 class="title">behind the trees</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-09.jpeg" alt="mermaid down" />
+              <div class="text-part">
+                <h2 class="title">Mermaid down</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-10.jpeg" alt="hereditary" />
+              <div class="text-part">
+                <h2 class="title">Hereditary</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-11.jpeg" alt="horror movie to watch" />
+              <div class="text-part">
+                <h2 class="title">horror movie to watch</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-12.jpeg" alt="discarnate" />
+              <div class="text-part">
+                <h2 class="title">Discarnate</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+            <div class="recommended-movies">
+              <img src="images/image-13.jpeg" alt="when evil lurks" />
+              <div class="text-part">
+                <h2 class="title">When Evil urks</h2>
+                <p class="story-line">
+                  Lorem ipsum dolor, sit amet consectetur
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
